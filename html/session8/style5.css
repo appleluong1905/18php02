@@ -1,0 +1,20 @@
+h1{
+	margin-left: 20%;
+	color: green;
+	animation: moveright 3s 3s infinite ease-in-out alternate;
+}
+h2{
+	margin-left: 20%;
+	color: green;
+	animation: moveright 3s 6s infinite ease-in-out alternate;
+}
+@keyframes moveright{
+	from {
+		margin-left: 20%;
+		color: green;
+	}
+	to {
+		margin-left: 60%;
+		color: red;
+	}
+}

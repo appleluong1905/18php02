@@ -1,0 +1,8 @@
+#content{
+	overflow: hidden;
+	height: 40px;
+	transition: height 3s ease-out 1s, padding-top 3s ease-in 1s;
+}
+#content:hover{
+	height: 150px;
+}

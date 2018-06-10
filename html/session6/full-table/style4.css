@@ -1,0 +1,11 @@
+table, tr, th, td{
+	border-collapse:collapse;
+	border: 1px solid green;
+	text-align: center;
+}
+table{
+	width:500px;
+}
+thead, tfoot{
+	background: #453;
+}

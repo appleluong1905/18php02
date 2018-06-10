@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example 1 - Session 7</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form name="register_user" action="add.html" method="post">
+		Name: <input type="text" name="name" placeholder="Please input your name" required> <br/>
+		Password: <input type="password" name="password" maxlength="8" required pattern="[a-zA-Z0-9]{6,}" title="Mat khau it nhat 6 ky tu, bang chu cai hoa hoac thuong hoc so!"><br/>
+		Phone: <input type="text" name="phone"> <br/>
+		Email: <input type="email" name="email" placeholder="example@php02.com" required> <br/>
+		My bank number: <input type="hidden" name="bank" value="98239423434"> <br/>
+		Gender:
+		<input type="radio" name="gender" value="1"> Male
+		<input type="radio" name="gender" value="0"> Female
+		<br/>
+		Faviourite:
+		<input type="checkbox" name="faviourite1"> Football
+		<input type="checkbox" name="faviourite2"> Volleyball
+		<input type="checkbox" name="faviourite3"> Tenis
+		<br/>
+		City:
+		<select name ="city">
+			<option value="danang">Da Nang</option>
+			<option value="hanoi">Ha Noi</option>
+			<option value="hcm">Ho Chi Minh</option>
+		</select>
+		<br/>
+		Introduce:
+		<textarea name="intro" rows="10" cols="30"></textarea>
+		<br/>
+		Avatar:
+		<input type="file" name="avatar">
+		<br/>
+		Number session:
+		<input type="number" name="session" step="5" min="10" max="20">
+		<br/>
+		Price:
+		<input type="range" name="price" step="5" min="10" max="50">
+		<br/>
+		Color:
+		<input type="color" name="color">
+		<br/>
+		<input type="submit" name="register" value="Register">
+		<input type="reset" name="reset" value="Reset">
+		<input type="button" name="button" value="Button">
+		<input type="image" name="buy" src="buy.jpg" width="50px">
+	</form>
+</body>
+</html>

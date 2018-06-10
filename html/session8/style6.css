@@ -1,0 +1,48 @@
+.xe{
+	width: 100px;
+}
+.oto{
+	float: left;
+	margin-left: 0%;
+	/*animation: moveright 3s 3s  ease-in-out alternate;*/
+}
+.xemay{
+	float: right;
+	margin-right: 0%;
+	/*animation: moveleft 3s 3s  ease-in-out alternate;*/
+}
+.fire{
+	margin-left: 35%;
+	float: left;
+}
+.xe{
+	transform: rotateY(180deg);
+}
+.fire img.xe{
+	opacity: 1;
+	animation: changeheight 3s 3s  ease-in-out normal;
+}
+@keyframes moveright{
+	from {
+		margin-left: 0%;
+	}
+	to {
+		margin-left: 40%;
+	}
+}
+@keyframes moveleft{
+	from {
+		margin-right: 0%;
+	}
+	to {
+		margin-right: 40%;
+	}
+}
+@keyframes changeheight{
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}

@@ -1,0 +1,9 @@
+h1{
+	font-size: 120%;
+	color: blue;
+	transition: font-size 1s ease-out 1s, color 5s ease-out 5s; 
+}
+h1:hover{
+	font-size: 180%;
+	color: green;
+}

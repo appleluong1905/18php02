@@ -1,0 +1,8 @@
+#qa div{
+	overflow: hidden;
+	height: 0;
+	transition: height 2s ease-out;
+}
+#qa div:target{
+	height: 100px
+}
