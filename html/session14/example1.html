@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery</title>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="myPlugins.js"></script>
+</head>
+<body>
+	<a href="#" id="demo">Try ID</a>
+	<a href="#" class="demo">Try Class</a>
+	<p>Try P</p>
+	<div class="demo1">
+		<div class="demo2">
+			Click demo 2
+		</div>
+	</div>
+	<script type="text/javascript">
+		document.write(sumTotal(6, 7));
+		$('#demo').click(function(){
+			alert('try ID');
+		});
+		$('.demo').click(function(){
+		    alert('try Class');	
+		});
+		$('p').click(function(){
+		    $('.demo1 .demo2').show();
+		});
+		$('.demo1 .demo2').click(function(){
+		    $(this).hide();
+		    $(this)[0].style.display = 'none';
+		});
+	</script>
+</body>
+</html>
