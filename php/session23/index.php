@@ -1,4 +1,8 @@
+<?php session_start();?>
 <h1>Home page</h1>
+<div><a href="#">My cart(
+<?php echo isset($_SESSION['cart'])?count($_SESSION['cart']):"0"?>
+)</a></div>
 <?php 
 include 'config/connectdb.php';
 $sqlCategory = "SELECT * FROM categories";
@@ -25,6 +29,7 @@ while($row = $resultProduct->fetch_assoc()) {
 	$image = 'images/'.$row['image'];
 	echo  $id.' - '. $row['name'];
 	echo "<img src='$image' width='100'>";
+	echo " <a href='products/buy.php?id=$id'>BUY NOW</a>";
 	echo "<br>";
 
 }
